@@ -6,13 +6,13 @@ from bs4 import BeautifulSoup
 from threading import Timer
 from telebot import TeleBot
 
-TOKEN = '1938158787:AAGdf8NLw8upcmyw5NjTa2QqCj58TS5Laqw'
+TOKEN = 'TOKEN'
 BOT = TeleBot(TOKEN)
 
 
 def send_word():
     Timer(86400.0, send_word).start()
-    BOT.send_message(586928099, get_random_word())
+    BOT.send_message("id", get_random_word())
 
 
 def get_random_word():
